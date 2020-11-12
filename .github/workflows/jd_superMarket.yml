@@ -19,18 +19,18 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/lxk0301/scripts.git ~/scripts
+          git clone https://github.com/Caozefu/my_jd_scripts.git ~/my_jd_scripts
       - name: Use Node.js 10.x
         uses: actions/setup-node@v1
         with:
           node-version: 10.x
       - name: npm install
         run: |
-          cd ~/scripts
+          cd ~/my_jd_scripts
           npm install
       - name: '运行 【京小超】'
         run: |
-          cd ~/scripts
+          cd ~/my_jd_scripts
           node jd_superMarket.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
