@@ -66,10 +66,13 @@
 **脚本兼容: [QuantumultX](https://apps.apple.com/us/app/quantumult-x/id1443988620), [Surge](https://apps.apple.com/us/app/surge-4/id1442620678), [Loon](https://apps.apple.com/us/app/loon/id1373567447), 小火箭, JSBox, Node.js**
 
 **TODO**
-- [ ] 所有活动互助码在一个脚本打印
+- [x] 所有活动互助码在一个脚本打印
+- [ ] 京喜工厂添加预测N天后可兑换功能
 
-## [邀请码互助入口](https://github.com/lxk0301/jd_scripts/discussions)
-
+## 邀请码互助
+  - [邀请码互助入口](https://github.com/lxk0301/jd_scripts/discussions)
+  - [获取各类活动互助码脚本 jd_get_share_code.js](https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_get_share_code.js)
+  - [邀请码使用规范](githubAction.md#互助码类环境变量)(仅限云端)
 ## 食用方法
 
 ### 方法一：本地安装Node.js，下载本库脚本

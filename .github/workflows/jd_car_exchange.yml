@@ -1,16 +1,16 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: jd_crazy_joy_coin
+name: jd_car_exchange
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '20 8 * * *'
+    - cron: '20 * * * *'
   watch:
     types: started
   repository_dispatch:
-    types: jd_crazy_joy_coin
+    types: jd_car_exchange
 jobs:
   build:
 
@@ -31,7 +31,7 @@ jobs:
       - name: '运行 【东东农场】'
         run: |
           cd ~/my_jd_scripts
-          node jd_crazy_joy_coin.js
+          node jd_car_exchange.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
